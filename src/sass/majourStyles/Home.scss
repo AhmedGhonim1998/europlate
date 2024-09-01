@@ -1,56 +1,82 @@
-body{
+    body {
     box-sizing: border-box;
     height: 50000px;
-}
+    }
 
-
-
-.SwiperBackGround{
-    background-color: #EBCB42;
+    .SwiperBackGround {
+    background-color: #ebcb42;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-}
-.arrowBg{
+    }
+    .arrowBg {
     background-color: #fff;
-}
-.seeVideosBtn{
-    .arrowBg{
+    }
+    .seeVideosBtn {
+    .arrowBg {
         border-radius: 150px;
         width: 20px;
-        .arrowRight
-{
-            color: #FA662D;
+        .arrowRight {
+        color: #fa662d;
         }
     }
-}
-.carSlide{
+    }
+    .carSlide {
     height: 150px;
-}
+    }
 
-.carSwiperContainer {
+    .carSwiperContainer {
     width: 100%;
     max-width: 100%;
     /* Optional: adjust container height if needed */
-}
+    }
 
-.mySwiper {
+    .mySwiper {
     width: 100%;
     height: auto; /* Adjust based on your image aspect ratio */
-}
+    }
 
-.swiperSlide {
+    .swiperSlide {
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-}
+    }
 
-.swiperImage {
+    .swiperImage {
     width: 100%;
     height: auto;
     object-fit: cover;
-     /* Adjust if needed */
-}
+    /* Adjust if needed */
+    }
+    .cardMostPopular {
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 37px;
+    .cardBody {
+        .cardTextContainer {
+        background-color: #fff;
+        border-radius: 37px;
+        }
+    }
+    }
+    .arrowcard {
+    // transform: rotate(310deg);
+    width: 20px;
+    height: 20px;
+    }
+    .imageContainer {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    .cardimage {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    }
+    .starcard{
+        color: #FA662D;
+    }
