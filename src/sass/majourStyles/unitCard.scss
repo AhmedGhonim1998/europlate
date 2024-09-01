@@ -1,0 +1,44 @@
+.textContent{
+    h2{
+        font-size: 2.5rem;
+    }
+    .price{
+        font-size: 2.5erm !important;
+    }
+    .textunitCard{
+        font-size: 1.5rem;
+    }
+}
+.columnUnitCard {
+    position: relative; /* Ensure z-index works */
+    z-index: 1; /* Set a low z-index */
+}
+
+.header-bar {
+    z-index: 999; /* Ensure this is higher than the card */
+}
+
+.menu-container {
+    z-index: 998; /* Higher than the card, lower than the toggle button */
+}
+
+/* Ensure the card has a lower z-index */
+.columnUnitCard {
+    z-index: 1; /* Lowest z-index */
+    position: relative; /* Required to apply z-index */
+}
+.textEditingContent{
+    background-color: #EBCB42;
+    border-radius: 37px;
+}
+input{
+    border-radius: 37px;
+}
+.charContent{
+    background-color: #D9D9D9;
+    border-radius: 150px;
+    width: 50px;
+    
+}
+
+

@@ -1,17 +1,17 @@
-.logoNavBar{
+.logoNavBar {
     width: 25%;
 }
-.btnContact{
+.navBar{
+    position: relative;
+    z-index: 999;
+}
+.btnContact {
     background-color: #FA662D;
     border-radius: 50px;
     border: #FA662D;
 }
-/* Menu Toggle Button Section */
 
-/* Menu Container Styles */
-.menu-container {
-    display: none; /* Hide menu by default */
-}
+/* Menu Toggle Button Section */
 
 /* Toggle Button Styles */
 .header-bar {
@@ -23,6 +23,7 @@
     margin-left: 30px;
     cursor: pointer;
     position: relative;
+    z-index: 999; /* Higher z-index for the toggle button */
 
     span {
         display: block;
@@ -63,7 +64,15 @@
         }
     }
 }
-
+@media (max-width: 991px) {
+    .menu>ul.active {
+        -webkit-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+        transform: scaleY(1);
+        /* position: relative; */
+        z-index: 999;
+    }
+}
 /* Menu Visibility on Small Screens */
 @media (max-width: 575px) {
     .menu-container {
@@ -74,6 +83,7 @@
         width: 100%; /* Full width to fit the screen */
         background: #fff; /* Background color of the menu */
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+        z-index: 998; /* Higher z-index for the menu */
     }
 
     /* Adjust dimensions for the toggle button on small screens */
@@ -104,8 +114,7 @@
     }
 }
 
-
-
+/* Menu Styles */
 @media (max-width: 575px) {
     .menu>ul {
         width: 100%;
@@ -124,5 +133,6 @@
         background: #f16126;
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
+        z-index: 997; /* Set z-index lower than the toggle button */
     }
 }

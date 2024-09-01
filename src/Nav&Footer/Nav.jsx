@@ -30,7 +30,7 @@
     return (
         <header className={`style-4 ${headerFixed ? 'header-fixed fadeInUp' : ''}`}>
         {/************************ header top start ***************************************/}
-        <div className="header-top d-md-none">
+        <div className="header-top d-md-none navBar">
             <Container>
             <div className="header-top-area">
                 <NavLink to="/sign-up" className="text-capitalize lab-btn me-3 text-decoration-none">

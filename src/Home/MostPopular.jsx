@@ -9,37 +9,43 @@ const cards = [
         name: 'Region European size Plate',
         selling: 'best seller',
         pirce: '45.0$',
-        imageUrl: '../Imagescards/card1.png'
+        imageUrl: '../Imagescards/card1.png',
+        link: '/hheu19'
     },
     {
         name: 'Color European size plate',
         selling: 'best seller',
         pirce: '45.0$',
-        imageUrl: '../Imagescards/card2.png'
+        imageUrl: '../Imagescards/card2.png',
+        link: '/europlatz'
     },
     {
         name: 'Color European size plate',
         selling: 'best seller',
         pirce: '45.0$',
-        imageUrl: '../Imagescards/card3.png'
+        imageUrl: '../Imagescards/card3.png',
+        link: '/slk55'
     },
     {
         name: 'Color European size plate',
         selling: 'best seller',
         pirce: '45.0$',
-        imageUrl: '../Imagescards/card4.png'
+        imageUrl: '../Imagescards/card4.png',
+        link: '/kao4hh'
     },
     {
         name: 'Region European size Plate',
         selling: 'best seller',
         pirce: '45.0$',
-        imageUrl: '../Imagescards/card5.png'
+        imageUrl: '../Imagescards/card5.png',
+        link: '/bdo9325'
     },
     {
         name: 'Region European size Plate',
         selling: 'best seller',
         pirce: '45.0$',
-        imageUrl: '../Imagescards/card6.png'
+        imageUrl: '../Imagescards/card6.png',
+        link: '/gutentag'
     }
 ];
 const MostPopular = () => {
@@ -63,37 +69,39 @@ const MostPopular = () => {
                                                     <Card.Img variant="top" src={item.imageUrl} className='cardimage ' />
                                                 </div>
                                             </div>
+                                            <Link to={item.link} className='nav-link'>
+                                                <Card.Body className='cardBody'>
+                                                    
+                                                    <div className="cardTextContainer">
+                                                        <div className="cardContent p-3">
+                                                            <div className="d-flex justify-content-between">
+                                                                <Card.Title>{item.name}</Card.Title>
+                                                                <FaLocationArrow className='arrowcard my-auto' />
+                                                            </div>
 
-                                            <Card.Body className='cardBody'>
-                                                <div className="cardTextContainer">
-                                                    <div className="cardContent p-3">
-                                                        <div className="d-flex justify-content-between">
-                                                            <Card.Title>{item.name}</Card.Title>
-                                                            <FaLocationArrow className='arrowcard my-auto'/>
-                                                        </div>
-
-                                                        <div className="starContent">
-                                                            <div className="textcard">
-                                                                <Card.Text className='text-capitalize'>
-                                                                    {item.selling}
-                                                                </Card.Text>
-                                                                <div className="d-flex justify-content-between">
-                                                                    <div className="d-flex justify-content-start">
-                                                                        <i class="icofont-star starcard me-3 my-auto"></i>
-                                                                        <i class="icofont-star starcard me-3 my-auto"></i>
-                                                                        <i class="icofont-star starcard me-3 my-auto"></i>
-                                                                        <i class="icofont-star starcard me-3 my-auto"></i>
-                                                                        <i class="icofont-star starcard me-3 my-auto"></i>
+                                                            <div className="starContent">
+                                                                <div className="textcard">
+                                                                    <Card.Text className='text-capitalize'>
+                                                                        {item.selling}
+                                                                    </Card.Text>
+                                                                    <div className="d-flex justify-content-between">
+                                                                        <div className="d-flex justify-content-start">
+                                                                            <i class="icofont-star starcard me-3 my-auto"></i>
+                                                                            <i class="icofont-star starcard me-3 my-auto"></i>
+                                                                            <i class="icofont-star starcard me-3 my-auto"></i>
+                                                                            <i class="icofont-star starcard me-3 my-auto"></i>
+                                                                            <i class="icofont-star starcard me-3 my-auto"></i>
+                                                                        </div>
+                                                                        <p className='mb-0'>
+                                                                            {item.pirce}
+                                                                        </p>
                                                                     </div>
-                                                                    <p className='mb-0'>
-                                                                    {item.pirce}
-                                                                    </p>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </Card.Body>
+                                                </Card.Body>
+                                            </Link>
                                         </Card>
 
                                     </Col>
