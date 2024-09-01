@@ -6,45 +6,46 @@ import line from '../assets/image/line.png'
 const Footer = () => {
     return (
         <>
-            <footer className='footerSection'>
+            <footer className='footerSection mt-5'>
                 <div className="footerContent p-5">
-                    <Row>
-                        <Col lg={6} md={12} sm={12} xs={12} className='my-auto'>
+                    <Row className='footerMainRow'>
+                        <Col lg={5} md={12} sm={12} xs={12} className='my-auto footerMainRow'>
                             <Link>
                                 <img src={logo2} alt="img" width={400} />
                             </Link>
                         </Col>
-                        <Col lg={6} md={12} sm={12} xs={12} className='pb-5'>
-                            <Row>
+                        <Col lg={6} md={12} sm={12} xs={12} className='pb-5 footerMainRow'>
+                            <Row className='footerMainRow'>
                                 <Col lg={6} md={12} sm={12} xs={12} className='mt-5'>
                                     <div className="d-flex justify-content-start" >
-                                        <hr className='text-white' width={50} />
+                                        <hr className='text-white ms-0' width={50} />
                                         <h5 className='my-auto text-white'>Home</h5>
                                     </div>
                                 </Col>
                                 <Col lg={6} md={12} sm={12} xs={12} className='mt-5'>
                                     <div className="d-flex justify-content-start">
-                                        <hr className='text-white' width={50} />
+                                        <hr className='text-white ms-0' width={50} />
                                         <h5 className='my-auto text-white text-capitalize'>privacy policy</h5>
                                     </div>
                                 </Col>
                             </Row>
-                            <Row>
+                            <Row className='footerMainRow'>
                                 <Col lg={6} md={12} sm={12} xs={12} className='mt-5'>
                                     <div className="d-flex justify-content-start">
-                                        <hr className='text-white' width={50} />
+                                        <hr className='text-white ms-0' width={50} />
                                         <h5 className='my-auto text-white text-capitalize'>contact us</h5>
                                     </div>
                                 </Col>
                                 <Col lg={6} md={12} sm={12} xs={12} className='mt-5'>
                                     <div className="d-flex justify-content-start">
-                                        <hr className='text-white' width={50} />
+                                        <hr className='text-white ms-0' width={50} />
                                         <h5 className='my-auto text-white text-capitaize'>our mission</h5>
                                     </div>
                                 </Col>
                             </Row>
                         </Col>
                     </Row>
+                    <p className='text-capitalize text-white text-center mb-0 mt-3'>&copy; all rights are reserved</p>
                 </div>
             </footer>
         </>
