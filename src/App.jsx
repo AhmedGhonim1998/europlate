@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import Nav from './Nav&Footer/Nav'
 import { Route,Routes } from 'react-router-dom'
 import HomeLayout from './Home/HomeLayout'
+import Footer from './Nav&Footer/Footer'
 function App() {
 
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path='/' element={<HomeLayout/>}/>
       </Routes>
+      <Footer/>
     </>
   )
 }
