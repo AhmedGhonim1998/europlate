@@ -1,14 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Container, Card, Row, Col, InputGroup, Form } from 'react-bootstrap';
 import imagePlate from '../assets/image/plateImageSk.png';
-import imge from '/Imagescards/card1.png';
+import imge from '/Imagescards/card3.png';
 import SymbolKeyboard from '../Home/components/SymbolKeyboard';
-
-const Hheu19 = () => {
+const Slk55 = () => {
     const [plateText, setPlateText] = useState('YOUR TEXT');
     const [plateColor, setPlateColor] = useState('lightgray');
     const [textColor, setTextColor] = useState('black');
-    const maxChars = 9;
+    const maxChars = 16;
 
     const handleTextChange = (e) => {
         const newText = e.target.value;
@@ -21,7 +20,6 @@ const Hheu19 = () => {
             setPlateText((prevText) => prevText + symbol);
         }
     };
-
     return (
         <>
             <section className='unitcard'>
@@ -53,7 +51,6 @@ const Hheu19 = () => {
 
                         <div className='plate-preview text-center pt-4 ps-4 pe-4'>
                             <div className="plateContainer mt-4 d-flex justify-content-center align-items-center mx-auto">
-                                <img src={imagePlate} alt="img" className="plateImage" width={49} />
                                 <div
                                     className="plate-display"
                                     style={{
@@ -62,14 +59,19 @@ const Hheu19 = () => {
                                         width: '300px',   // Fixed width
                                         height: '100px',  // Fixed height
                                         padding: '10px 20px',
-                                        fontSize: '2rem',
+                                        fontSize: '1.2rem',
                                         letterSpacing: '2px',
                                         display: 'flex',
                                         alignItems: 'center',
                                         justifyContent: 'center',
                                         overflow: 'hidden',  // Ensure text doesn't overflow
                                         textAlign: 'center', // Center text inside
-                                        
+                                        borderTopLeftRadius: '10px',
+                                        borderBottomLeftRadius: '10px',
+                                        border: '2px solid',
+                                        borderColor: 'black',
+                                        fontWeight: 'bold'
+
                                     }}
                                 >
                                     {plateText}
@@ -97,9 +99,9 @@ const Hheu19 = () => {
                                 </div>
                             </div>
                         </div>
-                        
-                            <SymbolKeyboard onSelectSymbol={handleSymbolSelect} />
-                        
+
+                        <SymbolKeyboard onSelectSymbol={handleSymbolSelect} />
+
 
 
 
@@ -107,7 +109,7 @@ const Hheu19 = () => {
                 </Container>
             </section>
         </>
-    );
+    )
 }
 
-export default Hheu19;
+export default Slk55

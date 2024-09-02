@@ -1,10 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Container, Card, Row, Col, InputGroup, Form } from 'react-bootstrap';
 import imagePlate from '../assets/image/plateImageSk.png';
-import imge from '/Imagescards/card1.png';
+import imge from '/Imagescards/card6.png';
 import SymbolKeyboard from '../Home/components/SymbolKeyboard';
-
-const Hheu19 = () => {
+const Gutentag = () => {
     const [plateText, setPlateText] = useState('YOUR TEXT');
     const [plateColor, setPlateColor] = useState('lightgray');
     const [textColor, setTextColor] = useState('black');
@@ -21,7 +20,6 @@ const Hheu19 = () => {
             setPlateText((prevText) => prevText + symbol);
         }
     };
-
     return (
         <>
             <section className='unitcard'>
@@ -42,7 +40,7 @@ const Hheu19 = () => {
                                 <p className='price'>45.0$</p>
                                 <p className='textunitCard'>
                                     Pick any of our European license plate text Embossed with your custom text.
-                                    This plate fits up to 9 characters.
+                                    This plate fits up to 16 characters.
                                 </p>
                             </div>
                         </Col>
@@ -52,8 +50,10 @@ const Hheu19 = () => {
                         {/* Display the input text */}
 
                         <div className='plate-preview text-center pt-4 ps-4 pe-4'>
-                            <div className="plateContainer mt-4 d-flex justify-content-center align-items-center mx-auto">
-                                <img src={imagePlate} alt="img" className="plateImage" width={49} />
+                            <div className="plateContainer mt-4 d-flex justify-content-center align-items-center mx-auto" >
+                                <img src={imagePlate} alt="img" className="plateImage" width={49}
+
+                                />
                                 <div
                                     className="plate-display"
                                     style={{
@@ -69,7 +69,7 @@ const Hheu19 = () => {
                                         justifyContent: 'center',
                                         overflow: 'hidden',  // Ensure text doesn't overflow
                                         textAlign: 'center', // Center text inside
-                                        
+
                                     }}
                                 >
                                     {plateText}
@@ -97,9 +97,9 @@ const Hheu19 = () => {
                                 </div>
                             </div>
                         </div>
-                        
-                            <SymbolKeyboard onSelectSymbol={handleSymbolSelect} />
-                        
+
+                        <SymbolKeyboard onSelectSymbol={handleSymbolSelect} />
+
 
 
 
@@ -107,7 +107,7 @@ const Hheu19 = () => {
                 </Container>
             </section>
         </>
-    );
+    )
 }
 
-export default Hheu19;
+export default Gutentag

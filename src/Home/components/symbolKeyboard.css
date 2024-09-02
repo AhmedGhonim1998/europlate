@@ -19,3 +19,79 @@
     background-color: #e0e0e0;
   }
   
+
+  .symbol-keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.symbol-button {
+    font-size: 1.5rem;
+    margin: 5px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.symbol-button:hover {
+    background-color: #ddd;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.filter-button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #f16126;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-button:hover {
+    background-color: #0056b3;
+}
+.symbol-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px; /* Set a max-width for the symbol container */
+  margin: 0 auto; /* Center horizontally */
+}
+
+.symbol-button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.symbol-button:hover {
+  background-color: #e0e0e0;
+}
+@media (max-width: 576px) {
+    .symbol-button {
+        font-size: 1.2rem;
+        padding: 8px;
+    }
+
+    .filter-button {
+        margin: 5px 5px;
+        padding: 8px 10px;
+    }
+}
