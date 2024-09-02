@@ -36,7 +36,7 @@ const Kao4hh = () => {
                         </Col>
                         <Col lg={6} md={12} sm={12} className='my-auto'>
                             <div className="textContent">
-                                <h2>Region European size Plate</h2>
+                                <h2>Color European size Plate</h2>
                                 <p className='price'>45.0$</p>
                                 <p className='textunitCard'>
                                     Pick any of our European license plate text Embossed with your custom text.
