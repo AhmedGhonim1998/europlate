@@ -40,7 +40,7 @@ const Slk55 = () => {
                                 <p className='price'>45.0$</p>
                                 <p className='textunitCard'>
                                     Pick any of our European license plate text Embossed with your custom text.
-                                    This plate fits up to 9 characters.
+                                    This plate fits up to 16 characters.
                                 </p>
                             </div>
                         </Col>
