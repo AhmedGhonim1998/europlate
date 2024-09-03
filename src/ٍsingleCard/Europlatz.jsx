@@ -51,9 +51,6 @@ const Europlatz = () => {
 
                         <div className='plate-preview text-center pt-4 ps-4 pe-4'>
                             <div className="plateContainer mt-4 d-flex justify-content-center align-items-center mx-auto" >
-                                <img src={imagePlate} alt="img" className="plateImage" width={49}
-                                
-                                />
                                 <div
                                     className="plate-display"
                                     style={{
@@ -72,7 +69,8 @@ const Europlatz = () => {
                                         fontWeight:'bold',
                                         border:'5px solid',
                                         borderColor:'grey',
-                                        borderLeft:'none'
+                                        borderTopLeftRadius:'10px',
+                                        borderBottomLeftRadius:'10px'
                                         
                                     }}
                                 >

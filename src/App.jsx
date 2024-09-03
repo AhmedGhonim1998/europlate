@@ -11,6 +11,7 @@ import Slk55 from './ٍsingleCard/Slk55'
 import Kao4hh from './ٍsingleCard/Kao4hh'
 import Bdo9325 from './ٍsingleCard/Bdo9325'
 import Gutentag from './ٍsingleCard/Gutentag'
+import History from './History/History'
 function App() {
 
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path='/kao4hh' element={<Kao4hh/>}/>
         <Route path='/bdo9325' element={<Bdo9325/>}/>
         <Route path='/gutentag' element={<Gutentag/>}/>
+        <Route path='/history' element={<History/>}/>
       </Routes>
       <Footer/>
     </>

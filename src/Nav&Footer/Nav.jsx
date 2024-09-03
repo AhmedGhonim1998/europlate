@@ -63,12 +63,12 @@
                         </Link>
                     </li>
                     <li onClick={scrollUp} className='me-4 pe-3'>
-                        <Link to="/shop" className="text-capitalize text-decoration-none" onClick={() => setMenuToggle(false)}>
+                        <Link to="/videos" className="text-capitalize text-decoration-none" onClick={() => setMenuToggle(false)}>
                         videos
                         </Link>
                     </li>
                     <li onClick={scrollUp} className='me-4 pe-3'>
-                        <Link to="/blog" className="text-capitalize text-decoration-none" onClick={() => setMenuToggle(false)}>
+                        <Link to="/history" className="text-capitalize text-decoration-none" onClick={() => setMenuToggle(false)}>
                         history
                         </Link>
                     </li>

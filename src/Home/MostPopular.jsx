@@ -49,6 +49,9 @@ const cards = [
     }
 ];
 const MostPopular = () => {
+    const scrollUp = () => {
+        window.scroll(0, 0);
+    };
     return (
         <>
             <section className='mostPopularContent mt-5'>
@@ -69,7 +72,7 @@ const MostPopular = () => {
                                                     <Card.Img variant="top" src={item.imageUrl} className='cardimage ' />
                                                 </div>
                                             </div>
-                                            <Link to={item.link} className='nav-link'>
+                                            <Link to={item.link} className='nav-link' onClick={scrollUp}>
                                                 <Card.Body className='cardBody'>
                                                     
                                                     <div className="cardTextContainer">
